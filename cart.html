@@ -1,16 +1,76 @@
 <!DOCTYPE HTML>
 <html>
-    <title></title>
+    
+<head>
+           
+    <script> 
+    
+  
 
-</html>
+        function sumlabel(){
+           /* int count=0;
+            String name="kifah"; */
+          
+            //sum of item in array
+        
+  var total =0;
+  var ITEM1=25;
+            var ITEM2=25;
+          total = ITEM1 + ITEM2;
+
+document.getElementById("total").innerHTML = total; 
+
+
+
+
+        }
+        function sumitem(){
+            var item2=1;
+            var item1=1;
+            var totalitem=item1+item2;
+            document.getElementById("totalitem").innerHTML=totalitem;
+
+
+        }
+    </script>
+    <title></title>
+</head>
 <body>
+    <table style="width: 100%;">
+
+        <tr style="background-color: cornflowerblue;">
+        
+        <td style="text-align: center;">
+        <img  src="icon/DMP.png"  width="90px" height="90px" />
+        </td>
+        
+        
+        <td style="text-align: center;">
+            <a href="#" >Home</a>
+        </td>
+        <td style="text-align: center;"> 
+           <a href="product.html"  >Products</a>
+        </td>
+        <td style="text-align: center;">
+            <a href="index.html" >Login</a>
+        </td>
+        
+        </tr>
+        
+        
+        
+        
+        
+        
+        </table>
+        <br>
     <h1><b>Product:</b></h1>
-    <table style="height:100%;width: 100%;">
+    <table style="height:100%;width: 100%;    text-align: center;">
         <tr>
-            <td style="color:yellow;"><h1><b>name</b></h1></td>
-            <td style="color:yellow;"><h1><b>count</b></h1></td>
-            <td style="color:yellow;"><h1><b>Price</b></h1></td>
-            <td style="color:yellow;"><h1><b>action</b></h1></td>
+            <td style="color:rgb(0, 0, 0);"><h1><b>name</b></h1></td>
+            <td style="color:rgb(12, 12, 7);"><h1><b>count</b></h1></td>
+            <td style="color:black;"><h1><b>Price</b></h1></td>
+            <td style="color:black;"><h1><b>action</b></h1></td>
            
         </tr>
         <tr>
@@ -23,18 +83,27 @@
             <td><h4>1</h4></td>
             <td><h4>7000$</h4></td>
         </tr>
-        <tr>
+        <tr onclick="sumlabel()">
             <td><H3><B>count</B></H3></td>
-            <td><H3><B>ITEM</B></H3>  </td>
+            <td><H3><B>ITEM</B></H3>
+            <button onclick="sumitem()">calucl item </button>
+              <p id="totalitem"> 0 </p>
+        
+                    </td>
             <td>
-                <h3><B><label for="TOTAL"></label>TOTAL</B></h3>
-                <input type="number" value="sum">
-            <script>
-                function sumlabel()
-            </script>
+                <h3><B><label>TOTAL</label></B></h3>
+                <button  onclick="sumlabel()">calucl total</button>
+               <p id="total">
+                0$
+               </p>
+           
             
             
             </td>
         </tr>
     
 </body>
+
+
+
+</html>
