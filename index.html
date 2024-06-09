@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+      
+        <title>Login to kifah store</title>
+		<script>
+		function signin(){
+		//window.alert("sometext");
+        window.location.replace("welcome.html");
+
+		}
+        function signup(){
+		//window.alert("here you need to add the new page for sign up ");
+        window.location.replace("signup.html");
+        //window.location.replace("image.html");
+
+		} 
+         
+		</script>
+    </head>
+    <body style="background-color: orange;">
+        <H1 style="text-align: center;">LOGIN PAGE</H1>
+        <p style="color:black;text-align: center;">
+            <i>welcome to<a href="image.html" >kifah</a>  store</i></p>
+       
+        <div style="text-align:center">
+            <label for style="color: rgb(255, 255, 255);"></label>Username:</label>
+            <input type="text" id="username" name="username" required/>
+          </div>
+		  <br>
+          
+          <div style="text-align:center">
+            <label for  style="color: #00000;"></label>Password (8 characters minimum):</label>
+            <input type="password" id="pass" name="password" minlength="8" required />
+          </div>
+		  <br>
+          <div style="text-align:center">
+          <button onclick="signin()" >Sign in</button>
+          <button  onclick="signup()"  >Sign UP</button>
+          
+</div>
+
+
+
+
+           
+    
+            
+</body>
+</html>
